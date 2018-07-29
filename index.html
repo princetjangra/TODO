@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+    <style>
+        .done{
+            text-decoration: line-through;
+        }
+        .container{
+            top: 2rem;
+        }
+        .top{
+            text-align: center;
+        }
+        input {
+            /* margin-top: 5px; */
+            width: 82%;
+            font-size: 16px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.2s;
+            user-select: none;
+        }
+        ul li span{
+            padding-right: 2rem;
+        }
+        ul li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+        ul li:hover {
+           background : #3bced8;
+        }
+    </style>
+</head>
+<body>
+    <div class="top p-3 display-2"><h1>TODO List</h1></div>
+    <div class="container col-5">
+        <input class="todo" type="text" name="" id="newtask">
+        <button class="todo btn" id="addtask"><i class="fas fa-plus"></i></button>
+        <button class="todo btn btn-outline btn-outline-danger px-3" id="clear"><i class="fas fa-times"></i></button>
+        <ul class="todo" id="todolist"></ul>
+    </div>
+</body>
+</html>
